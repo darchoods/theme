@@ -1,4 +1,3 @@
-<div class="row">
     <div class="well well-sm">
         <header class="row">
             <h4>IRC Information</h4>
@@ -56,5 +55,3 @@
         @endif
         </section>
     </div>
-
-</div>
