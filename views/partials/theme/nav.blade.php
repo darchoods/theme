@@ -4,7 +4,15 @@
             {{-- <li{{ Route::is('darchoods.qdb.index') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.qdb.index') }}">QuoteDB</a></li> --}}
             {{-- <li><a href="http://s.drk.sc/" target="_blank">Pastebin</a></li> --}}
             {{-- <li><a href="http://darchoods.net:9090/?nick={{ Session::get('nickname') }}&amp;channels=darchoods" target="_blank">WebChat</a></li> --}}
-            <li{{ Route::is('darchoods.pages.apidoc') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.pages.apidoc') }}">IRC API</a></li>
+            <li class="dropdown {{ Route::is('darchoods.*.apidoc') ? ' active' : '' }}">
+                <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="{{ URL::route('pxcms.user.dashboard') }}">
+                    APIs <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li{{ Route::is('darchoods.pages.apidoc') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.pages.apidoc') }}">IRC API</a></li>
+                    <li{{ Route::is('darchoods.qdb.apidoc') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.qdb.apidoc') }}">QuoteDB API</a></li>
+                </ul>
+            </li>
             <li class="divider"></li>
 
             @if (!Auth::guest())
@@ -14,7 +22,7 @@
                     <i class="fa fa-user"></i> {{{ $uI->name }}} <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    {{-- <li><a tabindex="-1" href="{{ URL::route('pxcms.user.dashboard') }}"><i class="glyphicon glyphicon-wrench"></i> Dashboard</a></li> --}}
+                    <li><a tabindex="-1" href="{{ URL::route('darchoods.settings.user') }}"><i class="glyphicon glyphicon-wrench"></i> Settings</a></li>
                     <li><a tabindex="-1" href="{{ URL::route('pxcms.user.logout') }}"><i class="fa fa-sign-out"></i> Signout </a></li>
                 </ul>
             </li>

@@ -31,11 +31,19 @@ body{
         //min-height: 879px;
 
         div.row{
+
+
             nav{
                 border-bottom: 5px solid darken(#00A6FF, 20%);
-                background-color: #1e1e1e;
+                background-color: #1E1E1E;
                 margin: -20px 0px 30px;
                 .box-shadow(0px 0px 1px 0px #000000);
+
+                .open {
+                    a, a:active, a:focus, a:hover {
+                        background-color: #1E1E1E;
+                    }
+                }
 
                 > ul{
                     > li{
@@ -43,11 +51,12 @@ body{
 
                         > a, &.active > a{
                             background-color: #1E1E1E;
-                            color: #FFFFFF;
+                            color: #CCCCCC;
                             margin-bottom: -5px;
                             box-shadow: 0 0 2px #000000;
                             border-bottom: 5px solid darken(#00A6FF, 20%);
                             transition: border-bottom 0.8s;
+                            padding: 10px 20px;
 
                             &:hover, &:focus{
                                 color: #CCCCCC;
@@ -60,6 +69,34 @@ body{
                         &.active > a{
                             color: #CCCCCC;
                             border-bottom: 5px solid #00A6FF;
+                        }
+                    }
+                }
+                ul.dropdown-menu {
+                    background-color: #1E1E1E;
+                    padding: 0;
+                    margin: 4px 0 0;
+                    border-radius: 0;
+
+                    li {
+                        > a, &.active > a{
+                            background-color: rgba(0, 0, 0, 0.3);
+                            border-left: 5px solid darken(#00A6FF, 20%);
+                            transition: border-left 0.8s;
+                            color: #CCCCCC;
+                            padding: 10px 20px;
+
+                            &:hover, &:focus{
+                                color: #CCCCCC;
+                                background-color: #1E1E1E;
+                                border-left: 5px solid #00A6FF;
+                                transition: border-left 0.4s;
+                            }
+                        }
+
+                        &.active > a{
+                            color: #CCCCCC;
+                            border-left: 5px solid #00A6FF;
                         }
                     }
                 }

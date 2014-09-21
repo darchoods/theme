@@ -61,10 +61,16 @@ body > header div.logo {
 }
 body section div.row nav {
   border-bottom: 5px solid #006499;
-  background-color: #1e1e1e;
+  background-color: #1E1E1E;
   margin: -20px 0px 30px;
   -webkit-box-shadow: 0px 0px 1px 0px #000000;
   box-shadow: 0px 0px 1px 0px #000000;
+}
+body section div.row nav .open a,
+body section div.row nav .open a:active,
+body section div.row nav .open a:focus,
+body section div.row nav .open a:hover {
+  background-color: #1E1E1E;
 }
 body section div.row nav > ul > li {
   float: left;
@@ -72,11 +78,12 @@ body section div.row nav > ul > li {
 body section div.row nav > ul > li > a,
 body section div.row nav > ul > li.active > a {
   background-color: #1E1E1E;
-  color: #FFFFFF;
+  color: #CCCCCC;
   margin-bottom: -5px;
   box-shadow: 0 0 2px #000000;
   border-bottom: 5px solid #006499;
   transition: border-bottom 0.8s;
+  padding: 10px 20px;
 }
 body section div.row nav > ul > li > a:hover,
 body section div.row nav > ul > li.active > a:hover,
@@ -90,6 +97,33 @@ body section div.row nav > ul > li.active > a:focus {
 body section div.row nav > ul > li.active > a {
   color: #CCCCCC;
   border-bottom: 5px solid #00A6FF;
+}
+body section div.row nav ul.dropdown-menu {
+  background-color: #1E1E1E;
+  padding: 0;
+  margin: 4px 0 0;
+  border-radius: 0;
+}
+body section div.row nav ul.dropdown-menu li > a,
+body section div.row nav ul.dropdown-menu li.active > a {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-left: 5px solid #006499;
+  transition: border-left 0.8s;
+  color: #CCCCCC;
+  padding: 10px 20px;
+}
+body section div.row nav ul.dropdown-menu li > a:hover,
+body section div.row nav ul.dropdown-menu li.active > a:hover,
+body section div.row nav ul.dropdown-menu li > a:focus,
+body section div.row nav ul.dropdown-menu li.active > a:focus {
+  color: #CCCCCC;
+  background-color: #1E1E1E;
+  border-left: 5px solid #00A6FF;
+  transition: border-left 0.4s;
+}
+body section div.row nav ul.dropdown-menu li.active > a {
+  color: #CCCCCC;
+  border-left: 5px solid #00A6FF;
 }
 body section div.row nav .dropdown .caret {
   border-top: 4px solid #FFFFFF;
