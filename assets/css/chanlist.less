@@ -1,0 +1,164 @@
+@import 'bootstrap/variables.less';
+@import 'bootstrap/mixins.less';
+@import 'bootstrap/utilities.less';
+@import 'bootstrap/wells.less';
+
+.channels {
+    .clearfix;
+
+    .channel-container {
+        .well-sm;
+        background-color: #c6c6c6;
+        .pull-left;
+        height: 100px;
+        width: 32.8%;
+        margin: 2px;
+
+        > .channel-title {
+            .clearfix;
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+        .current-users, .user-peak {
+            .make-md-column(6);
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 40px;
+            text-align: center;
+        }
+
+        .user-peak {
+            .pull-right;
+        }
+
+        &[data-channel="#darkscience"] {
+            background: #282828 url('/assets/img/chanlist/%23darkscience.png') no-repeat;
+            color: #ccc;
+
+            .channel-title {
+                font-size: 20px;
+            }
+            .channel-title, .current-users, .user-peak {
+                .make-md-column(7);
+                .make-md-column-offset(5);
+                .pull-right;
+                padding-top: 5px;
+            }
+        }
+
+        &[data-channel="#cybershade"] {
+            background-color: #1E1E1E;
+            color: #ccc;
+            border-top: 5px solid #5697C4;
+            border-bottom: 5px solid #5697C4;
+
+            .current-users, .user-peak {
+                padding-top: 30px;
+            }
+        }
+
+        &[data-channel="#darchoods"] {
+            background-color: #1E1E1E;
+            color: #ccc;
+            border-top: 5px solid #ffffff;
+            border-bottom: 5px solid #ffffff;
+            box-shadow: 0 0 1px 0 #000000;
+
+            > .channel-title {
+                color: #ffffff;
+            }
+
+            .current-users, .user-peak {
+                padding-top: 30px;
+            }
+        }
+
+        &[data-channel="#bots"] {
+            background: #282828 url('/assets/img/chanlist/%23bots.png') no-repeat;
+            color: #ccc;
+
+            .channel-title {
+                font-size: 20px;
+            }
+            .channel-title, .current-users, .user-peak {
+                .make-md-column(7);
+                .pull-left;
+                text-align: left;
+                padding-top: 5px;
+            }
+        }
+
+        &[data-channel="#php"] {
+            background: #6082bb url('/assets/img/chanlist/%23php.png') no-repeat;
+            color: #fff;
+            border: 1px solid #000;
+
+            .channel-title {
+                .hide;
+            }
+            .current-users, .user-peak {
+                padding-top: 70px;
+                text-align: center;
+            }
+        }
+
+        &[data-channel="#treehouse"] {
+            background: url('/assets/img/chanlist/%23treehouse.png') no-repeat;
+            color: #b1f6ba;
+
+            .channel-title {
+                text-align: left;
+            }
+        }
+
+        &[data-channel="#idlerpg"] {
+            background: url('/assets/img/chanlist/%23idlerpg.png') no-repeat;
+            color: #ffffff;
+
+            .channel-title {
+                font-size: 20px;
+            }
+            .channel-title, .current-users, .user-peak {
+                .make-md-column(7);
+                .pull-left;
+                text-align: left;
+                padding-top: 5px;
+            }
+        }
+
+        &[data-channel="#chasenet"] {
+            background: url('/assets/img/chanlist/%23chasenet.png') no-repeat;
+            color: #ffffff;
+
+            .channel-title {
+                font-size: 20px;
+            }
+            .channel-title, .current-users, .user-peak {
+                .make-md-column(7);
+                .pull-left;
+                text-align: left;
+                padding-top: 5px;
+            }
+        }
+
+        &[data-channel="#sector5d"] {
+            background: url('/assets/img/chanlist/%23sector5d.png') no-repeat;
+            border: 1px solid #000;
+
+            .channel-title {
+                .hide;
+            }
+            .current-users, .user-peak {
+                padding-top: 70px;
+                text-align: center;
+            }
+        }
+
+        &[data-channel="#pxcms"] {
+            background: #8F1706 url('/assets/img/chanlist/%23pxcms.png') no-repeat;
+            color: #fff;
+        }
+
+    }
+}
