@@ -9,8 +9,9 @@
                     IdleRPG <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li{{ Route::is('darchoods.irpg.stats') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.irpg.stats') }}">Stats</a></li>
                     <li{{ Route::is('darchoods.irpg.leaderboard') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.irpg.leaderboard') }}">Leader Board</a></li>
+                    <li{{ Route::is('darchoods.irpg.stats') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.irpg.stats') }}">Stats</a></li>
+                    <li{{ Route::is('darchoods.irpg.quests') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.irpg.quests') }}">Quests</a></li>
                 </ul>
             </li>
             <li class="dropdown {{ Route::is('darchoods.*.apidoc') ? ' active' : '' }}">
