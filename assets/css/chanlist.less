@@ -75,18 +75,9 @@
         }
 
         &[data-channel="#bots"] {
+            .info-left;
             background: #282828 url('/assets/img/chanlist/%23bots.png') no-repeat;
             color: #ccc;
-
-            .channel-title {
-                font-size: 20px;
-            }
-            .channel-title, .current-users, .user-peak {
-                .make-md-column(7);
-                .pull-left;
-                text-align: left;
-                padding-top: 5px;
-            }
         }
 
         &[data-channel="#php"] {
@@ -113,33 +104,15 @@
         }
 
         &[data-channel="#idlerpg"] {
+            .info-left;
             background: url('/assets/img/chanlist/%23idlerpg.png') no-repeat;
             color: #ffffff;
-
-            .channel-title {
-                font-size: 20px;
-            }
-            .channel-title, .current-users, .user-peak {
-                .make-md-column(7);
-                .pull-left;
-                text-align: left;
-                padding-top: 5px;
-            }
         }
 
         &[data-channel="#chasenet"] {
+            .info-left;
             background: url('/assets/img/chanlist/%23chasenet.png') no-repeat;
             color: #ffffff;
-
-            .channel-title {
-                font-size: 20px;
-            }
-            .channel-title, .current-users, .user-peak {
-                .make-md-column(7);
-                .pull-left;
-                text-align: left;
-                padding-top: 5px;
-            }
         }
 
         &[data-channel="#sector5d"] {
@@ -160,5 +133,44 @@
             color: #fff;
         }
 
+        &[data-channel="#norules"] {
+            .info-left;
+            background: url('/assets/img/chanlist/%23norules.jpg') no-repeat;
+            color: #fff;
+
+            .channel-title {
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+            .current-users, .user-peak {
+                font-size: 10px;
+                padding-top: 5px;
+            }
+        }
+
+        &[data-channel="#music"] {
+            background: url('/assets/img/chanlist/%23music.jpg') no-repeat;
+            color: #000;
+        }
+
+        &[data-channel="#fitness"] {
+            background: url('/assets/img/chanlist/%23fitness.jpg') no-repeat;
+            color: #fff;
+        }
+
+    }
+}
+
+
+.info-left {
+    .channel-title {
+        font-size: 20px;
+    }
+    .channel-title, .current-users, .user-peak {
+        .make-md-column(7);
+        .pull-left;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 0;
     }
 }

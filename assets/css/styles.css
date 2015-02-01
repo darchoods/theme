@@ -203,6 +203,7 @@
   float: left !important;
   text-align: left;
   padding-top: 5px;
+  padding-left: 0;
 }
 @media (min-width: 992px) {
   .channels .channel-container[data-channel="#bots"] .channel-title,
@@ -249,6 +250,7 @@
   float: left !important;
   text-align: left;
   padding-top: 5px;
+  padding-left: 0;
 }
 @media (min-width: 992px) {
   .channels .channel-container[data-channel="#idlerpg"] .channel-title,
@@ -275,6 +277,7 @@
   float: left !important;
   text-align: left;
   padding-top: 5px;
+  padding-left: 0;
 }
 @media (min-width: 992px) {
   .channels .channel-container[data-channel="#chasenet"] .channel-title,
@@ -299,6 +302,73 @@
 .channels .channel-container[data-channel="#pxcms"] {
   background: #8f1706 url('/assets/img/chanlist/%23pxcms.png') no-repeat;
   color: #fff;
+}
+.channels .channel-container[data-channel="#norules"] {
+  background: url('/assets/img/chanlist/%23norules.jpg') no-repeat;
+  color: #fff;
+}
+.channels .channel-container[data-channel="#norules"] .channel-title {
+  font-size: 20px;
+}
+.channels .channel-container[data-channel="#norules"] .channel-title,
+.channels .channel-container[data-channel="#norules"] .current-users,
+.channels .channel-container[data-channel="#norules"] .user-peak {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left !important;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .channels .channel-container[data-channel="#norules"] .channel-title,
+  .channels .channel-container[data-channel="#norules"] .current-users,
+  .channels .channel-container[data-channel="#norules"] .user-peak {
+    float: left;
+    width: 58.33333333%;
+  }
+}
+.channels .channel-container[data-channel="#norules"] .channel-title {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.channels .channel-container[data-channel="#norules"] .current-users,
+.channels .channel-container[data-channel="#norules"] .user-peak {
+  font-size: 10px;
+  padding-top: 5px;
+}
+.channels .channel-container[data-channel="#music"] {
+  background: url('/assets/img/chanlist/%23music.jpg') no-repeat;
+  color: #000;
+}
+.channels .channel-container[data-channel="#fitness"] {
+  background: url('/assets/img/chanlist/%23fitness.jpg') no-repeat;
+  color: #fff;
+}
+.info-left .channel-title {
+  font-size: 20px;
+}
+.info-left .channel-title,
+.info-left .current-users,
+.info-left .user-peak {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left !important;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .info-left .channel-title,
+  .info-left .current-users,
+  .info-left .user-peak {
+    float: left;
+    width: 58.33333333%;
+  }
 }
 /** Main Page Theme **/
 body {

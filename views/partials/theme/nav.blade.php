@@ -1,7 +1,7 @@
             <li{{ Route::is('pxcms.pages.home') ? ' class="active"' : '' }}><a href="{{ URL::route('pxcms.pages.home') }}">Home</a></li>
             <li{{ Route::is('darchoods.pages.heartbeat') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.pages.heartbeat') }}">Heartbeat</a></li>
             <li{{ Route::is('darchoods.pages.channels') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.pages.channels') }}">Channels</a></li>
-            {{-- <li{{ Route::is('darchoods.qdb.index') ? ' class="active"' : '' }}><a href="{{ URL::route('darchoods.qdb.index') }}">QuoteDB</a></li> --}}
+            <li{{ Route::is('pxcms.qdb.index') ? ' class="active"' : '' }}><a href="{{ URL::route('pxcms.qdb.index') }}" rel="nofollow">QuoteDB</a></li>
             {{-- <li><a href="http://s.drk.sc/" target="_blank">Pastebin</a></li> --}}
             {{-- <li><a href="http://darchoods.net:9090/?nick={{ Session::get('nickname') }}&amp;channels=darchoods" target="_blank">WebChat</a></li> --}}
             <li class="dropdown {{ Route::is('darchoods.irpg.*') ? ' active' : '' }}">
